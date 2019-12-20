@@ -1,20 +1,15 @@
-/*
- * simpleToggle.ino
- *
- * Created: 12/20/2019 1:17:33 PM
- * Author: bronco
- */ 
+
 
 void setup()
 {
-
-	  /* add setup code here, setup code runs once when the processor starts */
-
+	pinMode(LED_BUILTIN,OUTPUT);
 }
 
 void loop()
 {
 
-	  /* add main program code here, this code starts again each time it ends */
-
+	digitalWrite(LED_BUILTIN,HIGH);
+	delay(1000);
+	digitalWrite(LED_BUILTIN,LOW);
+	delay(1000);
 }
